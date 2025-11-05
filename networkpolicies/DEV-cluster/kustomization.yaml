@@ -1,0 +1,7 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+resources:
+    - ../../simple-clean/simple-clean-allow-prometheus-metrics.yaml
+    - ../../simple-clean/simple-clean-allow-same-namespace.yaml
+    - ../../simple-clean/simple-clean-deny-all-egress.yaml
+    - ../../simple-clean/simple-clean-deny-all-ingress.yaml
