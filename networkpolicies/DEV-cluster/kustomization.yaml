@@ -1,0 +1,7 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+resources:
+    - ../../correct-flow/correct-flow-allow-prometheus-metrics.yaml
+    - ../../correct-flow/correct-flow-allow-same-namespace.yaml
+    - ../../correct-flow/correct-flow-deny-all-egress.yaml
+    - ../../correct-flow/correct-flow-deny-all-ingress.yaml
