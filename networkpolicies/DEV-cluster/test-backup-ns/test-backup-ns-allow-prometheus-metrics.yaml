@@ -1,0 +1,44 @@
+typemeta:
+    kind: NetworkPolicy
+    apiversion: networking.k8s.io/v1
+objectmeta:
+    name: test-backup-ns-allow-prometheus-metrics
+    generatename: ""
+    namespace: test-backup-ns
+    selflink: ""
+    uid: ""
+    resourceversion: ""
+    generation: 0
+    creationtimestamp: "0001-01-01T00:00:00Z"
+    deletiontimestamp: null
+    deletiongraceperiodseconds: null
+    labels: {}
+    annotations:
+        network-policy.permission-binder.io/template: allow-prometheus-metrics.yaml
+        network-policy.permission-binder.io/template-path: networkpolicies/templates/allow-prometheus-metrics.yaml
+        network-policy.permission-binder.io/template-version: 1ac0995f31f889591c4e6f05a66c5914f38f6ac6
+    ownerreferences: []
+    finalizers: []
+    managedfields: []
+spec:
+    podselector:
+        matchlabels: {}
+        matchexpressions: []
+    ingress:
+        - ports: []
+          from:
+            - podselector: null
+              namespaceselector:
+                matchlabels:
+                    name: openshift-monitoring
+                matchexpressions: []
+              ipblock: null
+            - podselector: null
+              namespaceselector:
+                matchlabels:
+                    name: openshift-user-workload-monitoring
+                matchexpressions: []
+              ipblock: null
+    egress: []
+    policytypes:
+        - Ingress
