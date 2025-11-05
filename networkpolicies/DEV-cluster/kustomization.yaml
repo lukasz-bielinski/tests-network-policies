@@ -1,0 +1,7 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+resources:
+    - ../../final-correct/final-correct-allow-prometheus-metrics.yaml
+    - ../../final-correct/final-correct-allow-same-namespace.yaml
+    - ../../final-correct/final-correct-deny-all-egress.yaml
+    - ../../final-correct/final-correct-deny-all-ingress.yaml
