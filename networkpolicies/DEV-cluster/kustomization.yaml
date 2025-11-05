@@ -1,0 +1,7 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+resources:
+    - ../../clean-test/clean-test-allow-prometheus-metrics.yaml
+    - ../../clean-test/clean-test-allow-same-namespace.yaml
+    - ../../clean-test/clean-test-deny-all-egress.yaml
+    - ../../clean-test/clean-test-deny-all-ingress.yaml
