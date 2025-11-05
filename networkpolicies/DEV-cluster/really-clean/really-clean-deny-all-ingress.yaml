@@ -1,0 +1,30 @@
+typemeta:
+    kind: NetworkPolicy
+    apiversion: networking.k8s.io/v1
+objectmeta:
+    name: really-clean-deny-all-ingress
+    generatename: ""
+    namespace: really-clean
+    selflink: ""
+    uid: ""
+    resourceversion: ""
+    generation: 0
+    creationtimestamp: "0001-01-01T00:00:00Z"
+    deletiontimestamp: null
+    deletiongraceperiodseconds: null
+    labels: {}
+    annotations:
+        network-policy.permission-binder.io/template: deny-all-ingress.yaml
+        network-policy.permission-binder.io/template-path: networkpolicies/templates/deny-all-ingress.yaml
+        network-policy.permission-binder.io/template-version: 1ac0995f31f889591c4e6f05a66c5914f38f6ac6
+    ownerreferences: []
+    finalizers: []
+    managedfields: []
+spec:
+    podselector:
+        matchlabels: {}
+        matchexpressions: []
+    ingress: []
+    egress: []
+    policytypes:
+        - Ingress
