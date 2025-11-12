@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    network-policy.permission-binder.io/template: deny-all-ingress.yaml
+    network-policy.permission-binder.io/template-path: networkpolicies/templates/deny-all-ingress.yaml
+    network-policy.permission-binder.io/template-version: HEAD
+  name: test-app-2-deny-all-ingress
+  namespace: test-app-2
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
