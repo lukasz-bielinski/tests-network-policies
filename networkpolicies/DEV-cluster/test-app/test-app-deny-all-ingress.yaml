@@ -1,0 +1,29 @@
+metadata:
+  annotations:
+    network-policy.permission-binder.io/template: deny-all-ingress.yaml
+    network-policy.permission-binder.io/template-path: networkpolicies/templates/deny-all-ingress.yaml
+    network-policy.permission-binder.io/template-version: HEAD
+  creationTimestamp: "2025-11-12T18:06:41Z"
+  generation: 1
+  managedFields:
+  - apiVersion: networking.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:network-policy.permission-binder.io/template: {}
+          f:network-policy.permission-binder.io/template-path: {}
+          f:network-policy.permission-binder.io/template-version: {}
+      f:spec:
+        f:policyTypes: {}
+    manager: manager
+    operation: Update
+    time: "2025-11-12T18:06:41Z"
+  name: test-app-deny-all-ingress
+  namespace: test-app
+  uid: 08b8ac3b-3f8c-4e24-aa1e-902b58cff706
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
