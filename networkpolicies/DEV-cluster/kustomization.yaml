@@ -5,7 +5,3 @@ resources:
 - test-app-2/test-app-2-allow-same-namespace.yaml
 - test-app-2/test-app-2-deny-all-egress.yaml
 - test-app-2/test-app-2-deny-all-ingress.yaml
-- test-app/test-app-allow-prometheus-metrics.yaml
-- test-app/test-app-allow-same-namespace.yaml
-- test-app/test-app-deny-all-egress.yaml
-- test-app/test-app-deny-all-ingress.yaml
