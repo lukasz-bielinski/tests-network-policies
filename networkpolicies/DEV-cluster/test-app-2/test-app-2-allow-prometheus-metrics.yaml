@@ -1,0 +1,38 @@
+metadata:
+  annotations:
+    network-policy.permission-binder.io/template: allow-prometheus-metrics.yaml
+    network-policy.permission-binder.io/template-path: networkpolicies/templates/allow-prometheus-metrics.yaml
+    network-policy.permission-binder.io/template-version: HEAD
+  creationTimestamp: "2025-11-12T18:06:51Z"
+  generation: 1
+  managedFields:
+  - apiVersion: networking.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:network-policy.permission-binder.io/template: {}
+          f:network-policy.permission-binder.io/template-path: {}
+          f:network-policy.permission-binder.io/template-version: {}
+      f:spec:
+        f:ingress: {}
+        f:policyTypes: {}
+    manager: manager
+    operation: Update
+    time: "2025-11-12T18:06:51Z"
+  name: test-app-2-allow-prometheus-metrics
+  namespace: test-app-2
+  uid: 8102e038-02af-4851-b6e6-b0bd6187918e
+spec:
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: openshift-monitoring
+    - namespaceSelector:
+        matchLabels:
+          name: openshift-user-workload-monitoring
+  podSelector: {}
+  policyTypes:
+  - Ingress
