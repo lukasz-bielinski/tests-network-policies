@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    network-policy.permission-binder.io/template: allow-same-namespace.yaml
+    network-policy.permission-binder.io/template-path: networkpolicies/templates/allow-same-namespace.yaml
+    network-policy.permission-binder.io/template-version: f5ad00985f1ff16afecff77abf4e028430905b3d
+  creationTimestamp: null
+  name: test-app-2-allow-same-namespace
+  namespace: test-app-2
+spec:
+  ingress:
+  - from:
+    - podSelector: {}
+  podSelector: {}
+  policyTypes:
+  - Ingress
