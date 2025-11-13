@@ -5,3 +5,7 @@ resources:
 - test-ratelimit-1/test-ratelimit-1-allow-same-namespace.yaml
 - test-ratelimit-1/test-ratelimit-1-deny-all-egress.yaml
 - test-ratelimit-1/test-ratelimit-1-deny-all-ingress.yaml
+- test-ratelimit-5/test-ratelimit-5-allow-prometheus-metrics.yaml
+- test-ratelimit-5/test-ratelimit-5-allow-same-namespace.yaml
+- test-ratelimit-5/test-ratelimit-5-deny-all-egress.yaml
+- test-ratelimit-5/test-ratelimit-5-deny-all-ingress.yaml
