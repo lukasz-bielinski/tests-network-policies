@@ -5,3 +5,7 @@ resources:
 - test-remove-a/test-remove-a-allow-same-namespace.yaml
 - test-remove-a/test-remove-a-deny-all-egress.yaml
 - test-remove-a/test-remove-a-deny-all-ingress.yaml
+- test-remove-b/test-remove-b-allow-prometheus-metrics.yaml
+- test-remove-b/test-remove-b-allow-same-namespace.yaml
+- test-remove-b/test-remove-b-deny-all-egress.yaml
+- test-remove-b/test-remove-b-deny-all-ingress.yaml
