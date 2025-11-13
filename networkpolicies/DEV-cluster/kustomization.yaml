@@ -5,3 +5,7 @@ resources:
 - multi-a/multi-a-allow-same-namespace.yaml
 - multi-a/multi-a-deny-all-egress.yaml
 - multi-a/multi-a-deny-all-ingress.yaml
+- test-template-changes/test-template-changes-allow-prometheus-metrics.yaml
+- test-template-changes/test-template-changes-allow-same-namespace.yaml
+- test-template-changes/test-template-changes-deny-all-egress.yaml
+- test-template-changes/test-template-changes-deny-all-ingress.yaml
