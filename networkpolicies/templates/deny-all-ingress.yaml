@@ -7,4 +7,3 @@ spec:
   policyTypes:
   - Ingress
   ingress: []  # Deny all ingress
-# Test 56 template update at 2025-11-13T20:33:19Z
