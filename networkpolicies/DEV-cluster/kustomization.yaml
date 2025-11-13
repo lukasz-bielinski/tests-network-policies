@@ -9,3 +9,7 @@ resources:
 - multi-b/multi-b-allow-same-namespace.yaml
 - multi-b/multi-b-deny-all-egress.yaml
 - multi-b/multi-b-deny-all-ingress.yaml
+- test-template-changes/test-template-changes-allow-prometheus-metrics.yaml
+- test-template-changes/test-template-changes-allow-same-namespace.yaml
+- test-template-changes/test-template-changes-deny-all-egress.yaml
+- test-template-changes/test-template-changes-deny-all-ingress.yaml
