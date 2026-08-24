@@ -1,0 +1,7 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- pbo9-np-test-45-backup/pbo9-np-test-45-backup-allow-prometheus-metrics.yaml
+- pbo9-np-test-45-backup/pbo9-np-test-45-backup-allow-same-namespace.yaml
+- pbo9-np-test-45-backup/pbo9-np-test-45-backup-deny-all-egress.yaml
+- pbo9-np-test-45-backup/pbo9-np-test-45-backup-deny-all-ingress.yaml
