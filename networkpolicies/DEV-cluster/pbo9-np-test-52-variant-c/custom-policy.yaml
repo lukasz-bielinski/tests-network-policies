@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: custom-policy
+  namespace: pbo9-np-test-52-variant-c
+spec:
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: allowed-namespace
+    ports:
+    - port: 8080
+      protocol: TCP
+  podSelector:
+    matchLabels:
+      app: custom-app
+  policyTypes:
+  - Ingress

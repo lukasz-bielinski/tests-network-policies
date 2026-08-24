@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- pbo9-np-test-52-variant-c/custom-policy.yaml
+- pbo9-np-test-52-variant-c/pbo9-np-test-52-variant-c-allow-prometheus-metrics.yaml
+- pbo9-np-test-52-variant-c/pbo9-np-test-52-variant-c-allow-same-namespace.yaml
+- pbo9-np-test-52-variant-c/pbo9-np-test-52-variant-c-deny-all-egress.yaml
+- pbo9-np-test-52-variant-c/pbo9-np-test-52-variant-c-deny-all-ingress.yaml
