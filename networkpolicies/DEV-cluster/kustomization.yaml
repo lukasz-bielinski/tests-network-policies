@@ -1,7 +1,0 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-- test-template-changes/test-template-changes-allow-prometheus-metrics.yaml
-- test-template-changes/test-template-changes-allow-same-namespace.yaml
-- test-template-changes/test-template-changes-deny-all-egress.yaml
-- test-template-changes/test-template-changes-deny-all-ingress.yaml
