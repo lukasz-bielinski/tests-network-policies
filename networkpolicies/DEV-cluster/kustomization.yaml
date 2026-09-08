@@ -1,0 +1,7 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- np-test-50/np-test-50-allow-prometheus-metrics.yaml
+- np-test-50/np-test-50-allow-same-namespace.yaml
+- np-test-50/np-test-50-deny-all-egress.yaml
+- np-test-50/np-test-50-deny-all-ingress.yaml
