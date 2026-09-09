@@ -1,0 +1,11 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  annotations:
+    network-policy.permission-binder.io/template: deny-all-ingress.yaml
+  name: np-test-45-backup-deny-all-ingress
+  namespace: np-test-45-backup
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
